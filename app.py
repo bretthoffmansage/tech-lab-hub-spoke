@@ -76,6 +76,59 @@ APP_CSS = """
   margin: 0 auto;
   padding: 1rem 0;
 }
+.answer-mode-panel .question-counter-answer {
+  font-size: 1rem;
+  color: #e2e8f0;
+  margin-bottom: 0.5rem;
+}
+.answer-mode-panel .hub-progress-answer {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+.answer-mode-panel .hub-progress-answer strong {
+  color: #f8fafc;
+}
+.hub-context-answer {
+  background: #171923;
+  border-left: 4px solid #4a90d9;
+  padding: 18px 20px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.hub-context-answer .hub-context-name {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+.hub-context-answer .hub-context-desc {
+  color: #d1d5db;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.question-hero-answer {
+  animation: slideIn 0.5s ease-out;
+  color: #c084fc;
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 28px;
+  margin-bottom: 22px;
+}
+.answer-mode-panel label[data-testid="stWidgetLabel"] p,
+.answer-mode-panel label[data-testid="stWidgetLabel"] span {
+  color: #f1f5f9 !important;
+}
+.answer-mode-panel textarea {
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+  border-color: #475569 !important;
+}
+.answer-mode-panel textarea::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
 .question-hero {
   animation: slideIn 0.5s ease-out;
   font-size: 1.55rem;
@@ -288,8 +341,17 @@ def status_badge(status):
     return '<span class="badge-unanswered">unanswered</span>'
 
 
-def render_hub_context(hub):
+def render_hub_context(hub, answer_mode=False):
     if not hub:
+        return
+    if answer_mode:
+        st.markdown(
+            f'<div class="hub-context-answer">'
+            f'<div class="hub-context-name">{hub["hubName"]}</div>'
+            f'<div class="hub-context-desc">{hub["description"]}</div>'
+            f"</div>",
+            unsafe_allow_html=True,
+        )
         return
     st.markdown(
         f'<div class="hub-context">'
@@ -539,11 +601,11 @@ def render_answer_mode(hubs, progress):
     renew_active_lock()
     progress = q("getProgress")
 
-    st.markdown('<div class="hub-spoke-panel">', unsafe_allow_html=True)
+    st.markdown('<div class="hub-spoke-panel answer-mode-panel">', unsafe_allow_html=True)
 
-    if st.session_state.get("save_flash"):
-        st.success(st.session_state.save_flash)
-        st.session_state.save_flash = None
+    flash = st.session_state.pop("save_flash", None)
+    if flash:
+        st.toast(flash, icon="✅")
     if st.session_state.get("lock_warning"):
         st.warning(st.session_state.lock_warning)
 
@@ -571,14 +633,15 @@ def render_answer_mode(hubs, progress):
     hub_prog = per_hub_progress(progress, hub_id)
 
     st.markdown(
-        f'<p class="question-counter">Question {x}/{total}</p>',
+        f'<p class="question-counter-answer">Question {x}/{total}</p>',
         unsafe_allow_html=True,
     )
-    st.caption(
-        f"Hub progress: {hub_prog['answered']}/{hub_prog['total']} answered in "
-        f"**{hub['hubName']}**"
+    st.markdown(
+        f'<p class="hub-progress-answer">Hub progress: {hub_prog["answered"]}/{hub_prog["total"]} '
+        f'answered in <strong>{hub["hubName"]}</strong></p>',
+        unsafe_allow_html=True,
     )
-    render_hub_context(hub)
+    render_hub_context(hub, answer_mode=True)
 
     question_id = st.session_state.get("active_question_id")
     question = None
@@ -625,7 +688,7 @@ def render_answer_mode(hubs, progress):
         return
 
     st.markdown(
-        f'<div class="question-hero">{question["question"]}</div>',
+        f'<div class="question-hero-answer">{question["question"]}</div>',
         unsafe_allow_html=True,
     )
 
