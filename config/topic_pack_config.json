@@ -1,0 +1,90 @@
+{
+  "default_topic_limit": 25,
+  "default_asset_limit_per_section": 25,
+  "max_source_excerpts": 20,
+  "min_usefulness_score": 2,
+  "include_mock_records": true,
+  "dedupe_similarity_mode": "simple_normalized_text",
+
+  "_how_to_edit": [
+    "Add a topic: copy any block under topic_aliases, give it a new key,",
+    "a display_name, and a list of aliases (plain phrases matched on word",
+    "boundaries, case-insensitive). Scripts pick changes up on next run."
+  ],
+
+  "topic_aliases": {
+    "founder_bottleneck": {
+      "display_name": "Founder Bottleneck / Doing Everything Yourself",
+      "aliases": [
+        "founder bottleneck", "doing everything yourself",
+        "do everything yourself", "bottleneck", "delegation",
+        "everything depends on me", "business depends on me",
+        "owner dependent", "operator", "overwhelmed founder"
+      ]
+    },
+    "right_fit_client": {
+      "display_name": "Right-Fit Client",
+      "aliases": [
+        "right fit client", "right-fit client", "ideal client",
+        "best client", "qualified client", "wrong fit", "fit client",
+        "right fit"
+      ]
+    },
+    "high_ticket_offer": {
+      "display_name": "High-Ticket Offer",
+      "aliases": [
+        "high ticket", "high-ticket", "premium offer", "offer",
+        "offer positioning", "pricing", "paid offer"
+      ]
+    },
+    "client_objections": {
+      "display_name": "Client Objections",
+      "aliases": [
+        "objection", "objections", "pushback", "hesitation",
+        "resistance", "concern", "not ready", "too expensive", "no time"
+      ]
+    },
+    "lead_generation": {
+      "display_name": "Lead Generation",
+      "aliases": [
+        "lead generation", "leads", "lead", "prospect", "prospects",
+        "attract clients", "get clients", "audience growth"
+      ]
+    },
+    "content_strategy": {
+      "display_name": "Content Strategy",
+      "aliases": [
+        "content", "content strategy", "posts", "social media", "hooks",
+        "video", "youtube", "short form", "reels", "shorts"
+      ]
+    },
+    "sales_conversations": {
+      "display_name": "Sales Conversations",
+      "aliases": [
+        "sales", "sales call", "sales conversation", "enrollment",
+        "close", "closing", "buyer", "decision"
+      ]
+    },
+    "follow_up_nurture": {
+      "display_name": "Follow-Up and Nurture",
+      "aliases": [
+        "follow up", "follow-up", "nurture", "email", "sequence",
+        "campaign", "reminder"
+      ]
+    },
+    "webinar_event_conversion": {
+      "display_name": "Webinar / Event Conversion",
+      "aliases": [
+        "webinar", "event", "virtual event", "launch", "conversion",
+        "attendance", "registration", "show up"
+      ]
+    },
+    "systems_scaling": {
+      "display_name": "Scaling with Systems",
+      "aliases": [
+        "systems", "scaling", "scale", "process", "automation",
+        "automate", "operations", "workflow"
+      ]
+    }
+  }
+}

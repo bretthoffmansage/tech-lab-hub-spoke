@@ -1,0 +1,864 @@
+{
+  "generated_at": "2026-06-12T21:07:43Z",
+  "method": "keyword alias matching on word boundaries — NOT semantic understanding; counts reflect phrasing, not meaning",
+  "data_sources_inspected": [
+    "database/extracted_marketing_insights.jsonl",
+    "database/basic_signals.jsonl",
+    "database/transcript_chunks.jsonl"
+  ],
+  "extraction_mode": "mock",
+  "mock_mode_warning": "Current extraction mode appears to be mock/placeholder. This topic pack is useful for workflow testing and rough exploration, but real LLM extraction will produce better questions, hooks, and summaries.",
+  "insight_records_scanned": 793,
+  "chunks_scanned": 846,
+  "topics": {
+    "webinar_event_conversion": {
+      "display_name": "Webinar / Event Conversion",
+      "aliases": [
+        "webinar",
+        "event",
+        "virtual event",
+        "launch",
+        "conversion",
+        "attendance",
+        "registration",
+        "show up"
+      ],
+      "matching_chunks": 591,
+      "matching_source_files": 63,
+      "matching_insight_records": 538,
+      "matching_assets_total": 250,
+      "top_asset_types": [
+        [
+          "right_fit_client_questions",
+          84
+        ],
+        [
+          "quotable_lines",
+          54
+        ],
+        [
+          "offer_positioning_notes",
+          46
+        ],
+        [
+          "content_hooks",
+          9
+        ],
+        [
+          "youtube_angles",
+          9
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 319
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 207
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 191
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 183
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 121
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Tech Lab Oct 23 Part 1",
+          "source_file": "Tech-Lab_-Oct-23---Part-1.txt",
+          "chunk_id": "tech-lab-oct-23-part-1__chunk_0008",
+          "alias_hits": 26
+        },
+        {
+          "transcript_title": "Tech Lab Oct 23 Part 1",
+          "source_file": "Tech-Lab_-Oct-23---Part-1.txt",
+          "chunk_id": "tech-lab-oct-23-part-1__chunk_0010",
+          "alias_hits": 25
+        },
+        {
+          "transcript_title": "Obvio Attendee Onboarding",
+          "source_file": "Obvio-Attendee-Onboarding.txt",
+          "chunk_id": "obvio-attendee-onboarding__chunk_0008",
+          "alias_hits": 23
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"webinar\""
+    },
+    "content_strategy": {
+      "display_name": "Content Strategy",
+      "aliases": [
+        "content",
+        "content strategy",
+        "posts",
+        "social media",
+        "hooks",
+        "video",
+        "youtube",
+        "short form",
+        "reels",
+        "shorts"
+      ],
+      "matching_chunks": 490,
+      "matching_source_files": 57,
+      "matching_insight_records": 257,
+      "matching_assets_total": 106,
+      "top_asset_types": [
+        [
+          "right_fit_client_questions",
+          37
+        ],
+        [
+          "quotable_lines",
+          24
+        ],
+        [
+          "offer_positioning_notes",
+          21
+        ],
+        [
+          "client_pain_points",
+          6
+        ],
+        [
+          "stories_or_examples",
+          6
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 319
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 158
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 116
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 100
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 87
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Tech Talk March 2022 Part 1",
+          "source_file": "Tech-Talk---March-2022---Part-1.txt",
+          "chunk_id": "tech-talk-march-2022-part-1__chunk_0014",
+          "alias_hits": 35
+        },
+        {
+          "transcript_title": "Tech Lab July 23 2024 Part 2",
+          "source_file": "Tech-Lab---July-23-2024---Part-2.txt",
+          "chunk_id": "tech-lab-july-23-2024-part-2__chunk_0007",
+          "alias_hits": 24
+        },
+        {
+          "transcript_title": "AI Lab Special Edition August 2025 Part 5",
+          "source_file": "AI-Lab---Special-Edition August-2025---Part-5.txt",
+          "chunk_id": "ai-lab-special-edition-august-2025-part-5__chunk_0004",
+          "alias_hits": 23
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"content\""
+    },
+    "sales_conversations": {
+      "display_name": "Sales Conversations",
+      "aliases": [
+        "sales",
+        "sales call",
+        "sales conversation",
+        "enrollment",
+        "close",
+        "closing",
+        "buyer",
+        "decision"
+      ],
+      "matching_chunks": 279,
+      "matching_source_files": 51,
+      "matching_insight_records": 144,
+      "matching_assets_total": 62,
+      "top_asset_types": [
+        [
+          "offer_positioning_notes",
+          33
+        ],
+        [
+          "quotable_lines",
+          14
+        ],
+        [
+          "right_fit_client_questions",
+          9
+        ],
+        [
+          "stories_or_examples",
+          1
+        ],
+        [
+          "client_objections",
+          1
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 207
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 158
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 80
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 76
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 61
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Enrollment Rooms",
+          "source_file": "Enrollment-Rooms.txt",
+          "chunk_id": "enrollment-rooms__chunk_0000",
+          "alias_hits": 10
+        },
+        {
+          "transcript_title": "Tech Lab July 2025 Part 1",
+          "source_file": "Tech-Lab-July-2025---Part-1.txt",
+          "chunk_id": "tech-lab-july-2025-part-1__chunk_0001",
+          "alias_hits": 8
+        },
+        {
+          "transcript_title": "Tech Lab July 23 2024 Part 2",
+          "source_file": "Tech-Lab---July-23-2024---Part-2.txt",
+          "chunk_id": "tech-lab-july-23-2024-part-2__chunk_0034",
+          "alias_hits": 8
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"sales\""
+    },
+    "follow_up_nurture": {
+      "display_name": "Follow-Up and Nurture",
+      "aliases": [
+        "follow up",
+        "follow-up",
+        "nurture",
+        "email",
+        "sequence",
+        "campaign",
+        "reminder"
+      ],
+      "matching_chunks": 238,
+      "matching_source_files": 48,
+      "matching_insight_records": 119,
+      "matching_assets_total": 79,
+      "top_asset_types": [
+        [
+          "right_fit_client_questions",
+          27
+        ],
+        [
+          "quotable_lines",
+          27
+        ],
+        [
+          "frameworks_or_models",
+          8
+        ],
+        [
+          "offer_positioning_notes",
+          5
+        ],
+        [
+          "stories_or_examples",
+          4
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 191
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 100
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 91
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 80
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 54
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Tech Lab Oct 23 Part 4",
+          "source_file": "Tech-Lab_-Oct-23---Part-4.txt",
+          "chunk_id": "tech-lab-oct-23-part-4__chunk_0002",
+          "alias_hits": 28
+        },
+        {
+          "transcript_title": "Tech Lab Oct 23 Part 4",
+          "source_file": "Tech-Lab_-Oct-23---Part-4.txt",
+          "chunk_id": "tech-lab-oct-23-part-4__chunk_0005",
+          "alias_hits": 22
+        },
+        {
+          "transcript_title": "Tech Lab July 23 2024 Part 2",
+          "source_file": "Tech-Lab---July-23-2024---Part-2.txt",
+          "chunk_id": "tech-lab-july-23-2024-part-2__chunk_0032",
+          "alias_hits": 18
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"follow up\""
+    },
+    "systems_scaling": {
+      "display_name": "Scaling with Systems",
+      "aliases": [
+        "systems",
+        "scaling",
+        "scale",
+        "process",
+        "automation",
+        "automate",
+        "operations",
+        "workflow"
+      ],
+      "matching_chunks": 229,
+      "matching_source_files": 48,
+      "matching_insight_records": 215,
+      "matching_assets_total": 359,
+      "top_asset_types": [
+        [
+          "quotable_lines",
+          334
+        ],
+        [
+          "frameworks_or_models",
+          11
+        ],
+        [
+          "right_fit_client_questions",
+          8
+        ],
+        [
+          "offer_positioning_notes",
+          3
+        ],
+        [
+          "client_pain_points",
+          2
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 183
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 116
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 91
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 76
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 55
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Registration Agent View",
+          "source_file": "Registration---Agent-View.txt",
+          "chunk_id": "registration-agent-view__chunk_0000",
+          "alias_hits": 10
+        },
+        {
+          "transcript_title": "Tech Lab Oct 23 Part 3",
+          "source_file": "Tech-Lab_-Oct-23---Part-3.txt",
+          "chunk_id": "tech-lab-oct-23-part-3__chunk_0008",
+          "alias_hits": 9
+        },
+        {
+          "transcript_title": "Tech Lab July 2025 Part 1",
+          "source_file": "Tech-Lab-July-2025---Part-1.txt",
+          "chunk_id": "tech-lab-july-2025-part-1__chunk_0008",
+          "alias_hits": 7
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"systems\""
+    },
+    "high_ticket_offer": {
+      "display_name": "High-Ticket Offer",
+      "aliases": [
+        "high ticket",
+        "high-ticket",
+        "premium offer",
+        "offer",
+        "offer positioning",
+        "pricing",
+        "paid offer"
+      ],
+      "matching_chunks": 148,
+      "matching_source_files": 37,
+      "matching_insight_records": 147,
+      "matching_assets_total": 339,
+      "top_asset_types": [
+        [
+          "offer_positioning_notes",
+          292
+        ],
+        [
+          "right_fit_client_questions",
+          21
+        ],
+        [
+          "quotable_lines",
+          9
+        ],
+        [
+          "content_hooks",
+          3
+        ],
+        [
+          "youtube_angles",
+          3
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 121
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 87
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 61
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 55
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 54
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Tech Lab July 2025 Part 1",
+          "source_file": "Tech-Lab-July-2025---Part-1.txt",
+          "chunk_id": "tech-lab-july-2025-part-1__chunk_0010",
+          "alias_hits": 19
+        },
+        {
+          "transcript_title": "Understanding ClickFunnels with Russell Brunson",
+          "source_file": "Understanding-ClickFunnels-with-Russell-Brunson.txt",
+          "chunk_id": "understanding-clickfunnels-with-russell-brunson__chunk_0005",
+          "alias_hits": 16
+        },
+        {
+          "transcript_title": "Introducing OBIE",
+          "source_file": "Introducing_-OBIE.txt",
+          "chunk_id": "introducing-obie__chunk_0014",
+          "alias_hits": 11
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"high ticket\""
+    },
+    "lead_generation": {
+      "display_name": "Lead Generation",
+      "aliases": [
+        "lead generation",
+        "leads",
+        "lead",
+        "prospect",
+        "prospects",
+        "attract clients",
+        "get clients",
+        "audience growth"
+      ],
+      "matching_chunks": 78,
+      "matching_source_files": 31,
+      "matching_insight_records": 73,
+      "matching_assets_total": 11,
+      "top_asset_types": [
+        [
+          "offer_positioning_notes",
+          6
+        ],
+        [
+          "better_questions",
+          2
+        ],
+        [
+          "frameworks_or_models",
+          1
+        ],
+        [
+          "right_fit_client_questions",
+          1
+        ],
+        [
+          "quotable_lines",
+          1
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 61
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 41
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 36
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 31
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 27
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Tech Lab July 2025 Part 1",
+          "source_file": "Tech-Lab-July-2025---Part-1.txt",
+          "chunk_id": "tech-lab-july-2025-part-1__chunk_0008",
+          "alias_hits": 6
+        },
+        {
+          "transcript_title": "Navigating ClickFunnels with Ben Harris",
+          "source_file": "Navigating-ClickFunnels-with-Ben-Harris.txt",
+          "chunk_id": "navigating-clickfunnels-with-ben-harris__chunk_0000",
+          "alias_hits": 4
+        },
+        {
+          "transcript_title": "Simplifying ClickFunnels with Ben Harris",
+          "source_file": "Simplifying-ClickFunnels-with-Ben-Harris.txt",
+          "chunk_id": "simplifying-clickfunnels-with-ben-harris__chunk_0001",
+          "alias_hits": 4
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"lead generation\""
+    },
+    "right_fit_client": {
+      "display_name": "Right-Fit Client",
+      "aliases": [
+        "right fit client",
+        "right-fit client",
+        "ideal client",
+        "best client",
+        "qualified client",
+        "wrong fit",
+        "fit client",
+        "right fit"
+      ],
+      "matching_chunks": 48,
+      "matching_source_files": 10,
+      "matching_insight_records": 45,
+      "matching_assets_total": 31,
+      "top_asset_types": [
+        [
+          "offer_positioning_notes",
+          18
+        ],
+        [
+          "right_fit_client_questions",
+          8
+        ],
+        [
+          "quotable_lines",
+          3
+        ],
+        [
+          "client_pain_points",
+          1
+        ],
+        [
+          "frameworks_or_models",
+          1
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 38
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 28
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 28
+        },
+        {
+          "topic_key": "follow_up_nurture",
+          "display_name": "Follow-Up and Nurture",
+          "shared_chunks": 22
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 21
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Introducing OBIE",
+          "source_file": "Introducing_-OBIE.txt",
+          "chunk_id": "introducing-obie__chunk_0010",
+          "alias_hits": 16
+        },
+        {
+          "transcript_title": "Introducing OBIE",
+          "source_file": "Introducing_-OBIE.txt",
+          "chunk_id": "introducing-obie__chunk_0008",
+          "alias_hits": 15
+        },
+        {
+          "transcript_title": "Introducing OBIE",
+          "source_file": "Introducing_-OBIE.txt",
+          "chunk_id": "introducing-obie__chunk_0012",
+          "alias_hits": 12
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"right fit client\""
+    },
+    "client_objections": {
+      "display_name": "Client Objections",
+      "aliases": [
+        "objection",
+        "objections",
+        "pushback",
+        "hesitation",
+        "resistance",
+        "concern",
+        "not ready",
+        "too expensive",
+        "no time"
+      ],
+      "matching_chunks": 18,
+      "matching_source_files": 15,
+      "matching_insight_records": 7,
+      "matching_assets_total": 8,
+      "top_asset_types": [
+        [
+          "client_objections",
+          7
+        ],
+        [
+          "right_fit_client_questions",
+          1
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 12
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 10
+        },
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 9
+        },
+        {
+          "topic_key": "high_ticket_offer",
+          "display_name": "High-Ticket Offer",
+          "shared_chunks": 7
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 4
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Advanced ClickFunnels with Ben Harris",
+          "source_file": "Advanced-ClickFunnels-with-Ben-Harris.txt",
+          "chunk_id": "advanced-clickfunnels-with-ben-harris__chunk_0000",
+          "alias_hits": 2
+        },
+        {
+          "transcript_title": "AI Lab Special Edition August 2025 Part 3",
+          "source_file": "AI-Lab---Special-Edition August-2025---Part-3.txt",
+          "chunk_id": "ai-lab-special-edition-august-2025-part-3__chunk_0008",
+          "alias_hits": 2
+        },
+        {
+          "transcript_title": "Tech Lab July 2025 Part 4",
+          "source_file": "Tech-Lab-July-2025---Part-4.txt",
+          "chunk_id": "tech-lab-july-2025-part-4__chunk_0002",
+          "alias_hits": 2
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"objection\""
+    },
+    "founder_bottleneck": {
+      "display_name": "Founder Bottleneck / Doing Everything Yourself",
+      "aliases": [
+        "founder bottleneck",
+        "doing everything yourself",
+        "do everything yourself",
+        "bottleneck",
+        "delegation",
+        "everything depends on me",
+        "business depends on me",
+        "owner dependent",
+        "operator",
+        "overwhelmed founder"
+      ],
+      "matching_chunks": 2,
+      "matching_source_files": 2,
+      "matching_insight_records": 2,
+      "matching_assets_total": 1,
+      "top_asset_types": [
+        [
+          "right_fit_client_questions",
+          1
+        ]
+      ],
+      "data_basis": "mock extraction + raw chunks",
+      "co_occurring_topics": [
+        {
+          "topic_key": "sales_conversations",
+          "display_name": "Sales Conversations",
+          "shared_chunks": 2
+        },
+        {
+          "topic_key": "content_strategy",
+          "display_name": "Content Strategy",
+          "shared_chunks": 1
+        },
+        {
+          "topic_key": "lead_generation",
+          "display_name": "Lead Generation",
+          "shared_chunks": 1
+        },
+        {
+          "topic_key": "webinar_event_conversion",
+          "display_name": "Webinar / Event Conversion",
+          "shared_chunks": 1
+        },
+        {
+          "topic_key": "systems_scaling",
+          "display_name": "Scaling with Systems",
+          "shared_chunks": 1
+        }
+      ],
+      "sample_sources": [
+        {
+          "transcript_title": "Mastery Day February 24 2026 Part 2",
+          "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+          "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+          "alias_hits": 2
+        },
+        {
+          "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+          "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+          "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+          "alias_hits": 1
+        }
+      ],
+      "example_command": "python3 scripts/build_topic_pack.py \"founder bottleneck\""
+    }
+  }
+}

@@ -1,0 +1,342 @@
+{
+  "topic_key": "founder_bottleneck",
+  "display_name": "Founder Bottleneck / Doing Everything Yourself",
+  "query": "founder bottleneck",
+  "aliases_used": [
+    "founder bottleneck",
+    "doing everything yourself",
+    "do everything yourself",
+    "bottleneck",
+    "delegation",
+    "everything depends on me",
+    "business depends on me",
+    "owner dependent",
+    "operator",
+    "overwhelmed founder"
+  ],
+  "configured_topic": true,
+  "generated_at": "2026-06-12T21:07:43Z",
+  "extraction_mode": "mock",
+  "mock_mode_warning": "Current extraction mode appears to be mock/placeholder. This topic pack is useful for workflow testing and rough exploration, but real LLM extraction will produce better questions, hooks, and summaries.",
+  "method_note": "Keyword alias matching and light normalized-text dedupe; broad collection, not a single best answer.",
+  "limits": {
+    "per_section": 25,
+    "max_source_excerpts": 20
+  },
+  "stats": {
+    "matching_chunks": 2,
+    "matching_source_files": 2,
+    "matching_insight_records": 2,
+    "top_sections": [
+      [
+        "Hooks and Quotable Lines",
+        7
+      ],
+      [
+        "Client Desires",
+        6
+      ],
+      [
+        "Best Right-Fit-Client Questions",
+        4
+      ],
+      [
+        "Pain Points",
+        1
+      ]
+    ],
+    "co_occurring": [
+      "Sales Conversations",
+      "Content Strategy",
+      "Lead Generation",
+      "Webinar / Event Conversion",
+      "Scaling with Systems"
+    ]
+  },
+  "summary": "Across the archive, \"Founder Bottleneck / Doing Everything Yourself\" language appears in 2 chunks from 2 transcripts. The strongest material by volume: hooks and quotable lines (7), client desires (6), best right-fit-client questions (4), pain points (1). It most often appears alongside Sales Conversations, Content Strategy, Lead Generation. NOTE: this is a placeholder summary based on mock/keyword extraction — it reflects where the topic shows up, not yet a polished read of what is taught about it.",
+  "sections": {
+    "right_fit_client_questions": [
+      {
+        "text": "But what I would like you guys to remember is if I have to hire a camera operator, it's $500 a day, okay?",
+        "field": "right_fit_client_questions",
+        "alias_hits_in_item": 1,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "I was thinking, because it was a brilliant sales job, how do you evaluate?",
+        "field": "right_fit_client_questions",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "And the second thing is, how do you evaluate when something comes on and I don't have a whole lot of depth of experience?",
+        "field": "right_fit_client_questions",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "Are you excited so far?",
+        "field": "right_fit_client_questions",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 2,
+        "confidence_score": 0.3,
+        "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+        "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+        "inferred_date": "2025-08",
+        "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+        "chunk_index": 4,
+        "record_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004__extract_v1"
+      }
+    ],
+    "pain_points": [
+      {
+        "text": "I can't keep up.",
+        "field": "client_pain_points",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 2,
+        "confidence_score": 0.3,
+        "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+        "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+        "inferred_date": "2025-08",
+        "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+        "chunk_index": 4,
+        "record_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004__extract_v1"
+      }
+    ],
+    "client_desires": [
+      {
+        "text": "You want to make sure that they're just plugged in so that you have power going to them at all times if you're going to use them in that scenario anyway.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "But in some setups, if you have a small office and you want to make sure that you don't like.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "I want to give you like a full walk away.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "It is such an unbelievable shortcut for virtually anything you want to do.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 2,
+        "confidence_score": 0.3,
+        "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+        "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+        "inferred_date": "2025-08",
+        "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+        "chunk_index": 4,
+        "record_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004__extract_v1"
+      },
+      {
+        "text": "I want you to help me get as much of my time back as possible.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 2,
+        "confidence_score": 0.3,
+        "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+        "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+        "inferred_date": "2025-08",
+        "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+        "chunk_index": 4,
+        "record_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004__extract_v1"
+      },
+      {
+        "text": "So I want you to create a prompt and, and based on everything you know about me, everything that I do.",
+        "field": "client_desires",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 2,
+        "confidence_score": 0.3,
+        "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+        "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+        "inferred_date": "2025-08",
+        "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+        "chunk_index": 4,
+        "record_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004__extract_v1"
+      }
+    ],
+    "objections_pushback": [],
+    "beliefs_mistakes": [],
+    "hooks_quotables": [
+      {
+        "text": "That particular process, but for many of you, it'll work.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "Generally speaking, the auto follow systems are not great.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "Even super expensive auto follow systems aren't great.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "The auto follow system that we bought cost about $20,000 for.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "So I probably spend that much money or I would spend that much money in camera operators if I didn't have the system.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "Most of the auto follow systems are good.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      },
+      {
+        "text": "And Angela, any of these systems, if you're trying to evaluate it, if you can buy it on Amazon and return it within 30 days if it doesn' that's how I evaluate it.",
+        "field": "quotable_lines",
+        "alias_hits_in_item": 0,
+        "usefulness_score": 4,
+        "confidence_score": 0.3,
+        "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+        "transcript_title": "Mastery Day February 24 2026 Part 2",
+        "inferred_date": "2026-02-24",
+        "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+        "chunk_index": 12,
+        "record_id": "mastery-day-february-24-2026-part-2__chunk_0012__extract_v1"
+      }
+    ],
+    "youtube_angles": [],
+    "short_form_angles": [],
+    "email_angles": [],
+    "sales_page_angles": [],
+    "offer_positioning": []
+  },
+  "source_excerpts": [
+    {
+      "source_file": "Mastery-Day---February-24-2026---Part-2.txt",
+      "transcript_title": "Mastery Day February 24 2026 Part 2",
+      "inferred_date": "2026-02-24",
+      "chunk_id": "mastery-day-february-24-2026-part-2__chunk_0012",
+      "chunk_index": 12,
+      "alias_hits": 2,
+      "excerpt": "…nd now when I say something like that, that sounds asinine. But what I would like you guys to remember is if I have to hire a camera operator, it's $500 a day, okay? That's how much a camera operator costs me. And we do 30 events a year. Each event is, you know, probably three days. It adds up really quick. So I probably spend that much money or I would spend that much money in camera operators i…"
+    },
+    {
+      "source_file": "AI-Lab---Special-Edition August-2025---Part-4.txt",
+      "transcript_title": "AI Lab Special Edition August 2025 Part 4",
+      "inferred_date": "2025-08",
+      "chunk_id": "ai-lab-special-edition-august-2025-part-4__chunk_0004",
+      "chunk_index": 4,
+      "alias_hits": 1,
+      "excerpt": "…ing to reveal my dark side right now. All right, so one of them is perfectionist rework loop, which means constant horizon shifting, delegation with the safety net speed bias over depth. But this thing cracked right into me. But full disclosure, I did this about 12 weeks ago and what it gave me back then was completely different because I changed my behaviors and ChatGPT was paying attention to th…"
+    }
+  ],
+  "related_topics": [
+    "Sales Conversations",
+    "Content Strategy",
+    "Lead Generation",
+    "Webinar / Event Conversion",
+    "Scaling with Systems"
+  ],
+  "suggested_demo_questions": [
+    "Give me questions from this topic. -> python3 scripts/export_topic_assets.py \"founder bottleneck\" --asset-type questions",
+    "Give me hooks from this topic. -> python3 scripts/export_topic_assets.py \"founder bottleneck\" --asset-type hooks",
+    "Give me objections from this topic. -> python3 scripts/export_topic_assets.py \"founder bottleneck\" --asset-type objections",
+    "Give me YouTube angles from this topic. -> python3 scripts/export_topic_assets.py \"founder bottleneck\" --asset-type youtube_angles",
+    "Give me everything useful from this topic. -> python3 scripts/export_topic_assets.py \"founder bottleneck\" --asset-type all"
+  ]
+}

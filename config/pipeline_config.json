@@ -1,0 +1,83 @@
+{
+  "transcript_source_dir": "auto",
+  "cleaned_output_dir": "processed/cleaned_transcripts",
+  "chunks_output_dir": "processed/transcript_chunks",
+  "database_output_dir": "database",
+  "reports_output_dir": "processed/reports",
+  "extracted_insights_dir": "processed/extracted_insights",
+
+  "chunk_word_target": 1000,
+  "chunk_word_overlap": 150,
+  "min_chunk_words": 250,
+
+  "supported_extensions": [".txt", ".srt", ".vtt", ".md"],
+  "detected_but_unsupported_extensions": [".docx", ".pdf"],
+  "excluded_dirs": [
+    "processed", "database", "scripts", "docs", "config",
+    "node_modules", ".git", ".venv", "venv", "__pycache__"
+  ],
+  "excluded_files": [".DS_Store", "README.md", "MEMORY.md"],
+
+  "skip_exact_duplicates": true,
+  "skip_empty_files": true,
+  "min_file_words": 30,
+
+  "usefulness_keyword_rules": {
+    "high_value_phrases": [
+      "the mistake is", "the problem is", "the real problem is",
+      "the better question is", "what people miss",
+      "the reason this matters", "the reason this works",
+      "high ticket", "right fit", "right-fit", "framework",
+      "ask yourself", "here's the thing", "the key is",
+      "most people think", "what you want to do is"
+    ],
+    "low_value_phrases": [
+      "can you hear me", "can you see my screen", "you're on mute",
+      "let me share my screen", "give me one second", "we'll wait a few",
+      "rename yourself", "breakout room", "raise your hand",
+      "thanks for joining", "thank you for joining", "we're recording"
+    ]
+  },
+
+  "extraction_keyword_rules": {
+    "teaching_points": [
+      "the reason this matters", "the reason this works", "the key is",
+      "what you want to do is", "here's how", "the way to think about",
+      "framework", "process", "strategy", "system", "step by step",
+      "ask yourself", "what people miss", "most people"
+    ],
+    "objections": [
+      "objection", "too expensive", "can't afford", "i don't have time",
+      "not sure it will work", "i'm not technical", "pushback",
+      "what if it doesn't", "skeptical", "hesitant", "i don't know if"
+    ],
+    "pain_points": [
+      "the problem is", "the real problem is", "struggle", "struggling",
+      "frustrated", "frustrating", "overwhelmed", "stuck", "bottleneck",
+      "burned out", "burnout", "pain point", "doesn't work", "isn't working",
+      "wasting time", "too much time", "can't keep up"
+    ],
+    "mistakes": [
+      "the mistake is", "the mistake people make", "mistake", "misconception",
+      "people get this wrong", "what people get wrong", "the trap",
+      "don't do this", "the wrong way", "shouldn't"
+    ],
+    "hooks": [
+      "the better question is", "what if", "most people", "what people miss",
+      "nobody talks about", "the secret", "here's the thing",
+      "the truth is", "imagine if", "stop doing"
+    ],
+    "strategic_terms": [
+      "high ticket", "right fit", "right-fit", "client", "offer",
+      "marketing", "sales", "scale", "scaling", "bottleneck", "delegation",
+      "delegate", "system", "automate", "automation", "content",
+      "lead", "leads", "conversion", "webinar", "event", "launch",
+      "follow up", "follow-up", "nurture", "objection", "mindset",
+      "framework", "process", "strategy", "funnel", "enrollment"
+    ],
+    "question_starters": [
+      "why", "how do you", "how can you", "what if", "ask yourself",
+      "what would", "have you ever", "do you"
+    ]
+  }
+}

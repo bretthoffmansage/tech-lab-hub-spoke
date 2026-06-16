@@ -1,0 +1,9 @@
+# Streamlit app config — safe to commit (no secrets here).
+# Secrets (CONVEX_URL etc.) go in .streamlit/secrets.toml locally or in the
+# Streamlit Cloud "Secrets" panel — both are gitignored / never committed.
+
+[browser]
+gatherUsageStats = false
+
+[server]
+headless = true

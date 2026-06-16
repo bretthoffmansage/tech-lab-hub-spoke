@@ -1,0 +1,40 @@
+{
+  "provider": "mock",
+  "model": "mock",
+  "provider_models": {
+    "mock": "mock",
+    "anthropic": "claude-fable-5",
+    "openai": "gpt-4o"
+  },
+
+  "input_packets_path": "processed/extracted_insights/llm_packets.jsonl",
+  "output_path": "database/extracted_marketing_insights.jsonl",
+  "failures_path": "processed/reports/marketing_extraction_failures.jsonl",
+  "reports_dir": "processed/reports",
+  "prompt_path": "processed/extracted_insights/marketing_extraction_prompt_v1.md",
+
+  "batch_size": 1,
+  "max_packets": null,
+  "resume": true,
+  "overwrite": false,
+
+  "min_usefulness_to_keep": 2,
+  "require_valid_json": true,
+  "extraction_schema_version": "1.0",
+
+  "temperature": 0.2,
+  "max_output_tokens": 3000,
+
+  "api_key_env_vars": {
+    "anthropic": "ANTHROPIC_API_KEY",
+    "openai": "OPENAI_API_KEY"
+  },
+
+  "_notes": [
+    "provider: 'mock' (default, no API/keys needed), 'anthropic', or 'openai'.",
+    "Real providers require their pip package and API key env var; mock mode",
+    "is pure standard library. min_usefulness_to_keep filters records below",
+    "that usefulness_score out of the output file (they are counted in the",
+    "extraction report). Set to 0 to keep everything."
+  ]
+}

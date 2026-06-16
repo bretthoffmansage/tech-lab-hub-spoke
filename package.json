@@ -1,0 +1,20 @@
+{
+  "name": "tech-lab-transcripts",
+  "version": "1.0.0",
+  "description": "A local, rerunnable pipeline that turns this folder of raw Tech Lab call transcripts into a searchable content-intelligence knowledge base: cleaned transcripts, retrieval-ready chunks, heuristic marketing signals, LLM-ready extraction packets, and a local SQLite full-text-search database.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convex": "^1.41.0"
+  }
+}

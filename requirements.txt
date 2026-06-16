@@ -1,0 +1,3 @@
+streamlit>=1.50
+convex>=0.7
+python-dotenv>=1.0

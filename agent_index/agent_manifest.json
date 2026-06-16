@@ -1,0 +1,88 @@
+{
+  "system_name": "Tech Lab Transcript Knowledge Base",
+  "system_purpose": "Make 5 years of Tech Lab call transcripts usable for fast retrieval of marketing intelligence: right-fit-client questions, content hooks, pain points, objections, content angles, and topic-based content packs.",
+  "current_status": "Proof-of-concept for internal boss demo. Foundation pipeline, mock extraction, and topic pack workflow are built and validated. Extraction records are MOCK placeholders pending a real LLM extraction run.",
+  "last_demo_run": "2026-06-12T21:07:46Z",
+  "source_of_truth_files": [
+    "database/transcript_chunks.jsonl",
+    "database/basic_signals.jsonl",
+    "database/extracted_marketing_insights.jsonl",
+    "database/topic_index.json",
+    "database/topic_packs/*.json"
+  ],
+  "generated_files": [
+    "processed/cleaned_transcripts/*.md",
+    "processed/transcript_chunks/**",
+    "processed/extracted_insights/llm_packets.jsonl",
+    "processed/reports/*.md",
+    "processed/reports/topic_packs/*.md",
+    "exports/topic_assets/*",
+    "database/tech_lab_knowledge_base.sqlite"
+  ],
+  "search_scripts": [
+    "scripts/query_local_kb.py — keyword search over raw chunks (SQLite FTS5)",
+    "scripts/query_marketing_insights.py — search extracted insight records"
+  ],
+  "topic_scripts": [
+    "scripts/discover_topics.py — list topics the archive supports",
+    "scripts/build_topic_pack.py — full grouped pack for one topic",
+    "scripts/export_topic_assets.py — clean asset list for hand-off"
+  ],
+  "natural_language_interface": [
+    "app.py — Streamlit demo app (launch: streamlit run app.py; requires pip install streamlit)",
+    "scripts/natural_language_router.py — importable intent + closest-match topic router (also CLI: python3 scripts/natural_language_router.py \"give me hooks\")"
+  ],
+  "safe_read_targets": [
+    "database/",
+    "processed/",
+    "exports/",
+    "config/",
+    "docs/",
+    "agent_index/",
+    "raw transcript .txt files (READ ONLY)"
+  ],
+  "safe_write_targets": [
+    "processed/reports/",
+    "processed/reports/topic_packs/",
+    "database/topic_packs/",
+    "database/topic_index.json",
+    "exports/topic_assets/"
+  ],
+  "do_not_modify": [
+    "Raw transcript .txt files in the project root and raw_transcripts/",
+    "database/transcript_chunks.jsonl (rebuild via scripts, never hand-edit)",
+    "database/extracted_marketing_insights.jsonl (append via extraction script only)",
+    "processed/cleaned_transcripts/ (rebuild via scripts)"
+  ],
+  "recommended_retrieval_order": [
+    "1. database/topic_index.json — topic discovery ('what topics exist?')",
+    "2. database/topic_packs/*.json — if a pack for the topic already exists",
+    "3. database/extracted_marketing_insights.jsonl — structured marketing intelligence",
+    "4. database/transcript_chunks.jsonl — source grounding and excerpts",
+    "5. processed/cleaned_transcripts/ — only when broader context is needed"
+  ],
+  "supported_user_requests": [
+    "What topics can I make questions from?",
+    "Build a topic pack for <topic>",
+    "Give me right-fit-client questions / hooks / objections / pain points for <topic>",
+    "Give me YouTube / short-form / email angles for <topic>",
+    "Show me source excerpts about <topic>",
+    "Export a clean list of <asset type> for <topic>",
+    "Search the transcripts for <phrase>"
+  ],
+  "unsupported_or_deferred_requests": [
+    "Chatbot-style conversational answers (deferred)",
+    "Web app or UI (deferred)",
+    "Semantic/vector search (deferred — keyword matching only today)",
+    "Speaker attribution (impossible — source has no speaker labels)",
+    "Timestamped citations (impossible — source has no reliable timestamps)",
+    "Real LLM extraction quality (deferred — current records are mock placeholders)"
+  ],
+  "known_limitations": [
+    "Topic matching is keyword/alias based, not semantic.",
+    "Extraction records are conservative mock placeholders (verbatim sentences routed by keyword signals, confidence 0.3).",
+    "Dates come from filenames; many are 'unknown'.",
+    "Transcripts contain transcription errors; quotes are faithful to the transcript, not necessarily to what was actually said."
+  ],
+  "mock_mode_warning": "All records in database/extracted_marketing_insights.jsonl currently have extraction_provider='mock'. Treat questions/hooks/angles as placeholders for workflow testing."
+}

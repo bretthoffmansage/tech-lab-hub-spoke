@@ -1,0 +1,38 @@
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
+.DS_Store
+.streamlit/secrets.toml
+
+# Raw transcript/source files - do not commit
+*.txt
+!requirements.txt
+raw_transcripts/
+
+# Sensitive known file
+Obvio-Key---SAGE--Token.txt
+
+# Local/generated transcript outputs not needed for hosted Convex app
+processed/cleaned_transcripts/
+processed/transcript_chunks/
+processed/extracted_insights/
+processed/reports/
+exports/
+database/*.jsonl
+database/*.sqlite
+database/basic_signals.jsonl
+database/extracted_marketing_insights.jsonl
+database/transcript_chunks.jsonl
+
+# Local environment/secrets
+.env
+.env.local
+.streamlit/secrets.toml
+
+# Dependencies/cache
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
